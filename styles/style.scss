@@ -14,10 +14,40 @@ img{
     width: 100%;
 }
 header{
-    width: 1140px;
-    margin: 0 auto;
-    border: 1px solid black;
-    height: 100px;
+    .container{
+        width: 1140px;
+        margin: 0 auto;
+        border: 1px solid black;
+        height: 100px;
+        font-family: 'Sigmar One', cursive;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_part_one{
+            width: 300px;
+        }
+        .link{
+            width: 120px;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .header_part_two{
+            width: 300px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            .shop_link{
+                font-size: 15px;
+            }
+            .contact_link{
+                font-size: 15px;
+            }
+        }
+    }
 }
 nav{
     width: 1140px;

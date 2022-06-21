@@ -18,11 +18,60 @@ img {
   width: 100%;
 }
 
-header {
+header .container {
   width: 1140px;
   margin: 0 auto;
   border: 1px solid black;
   height: 100px;
+  font-family: 'Sigmar One', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .header_part_one {
+  width: 300px;
+}
+
+header .container .link {
+  width: 120px;
+  height: 100px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+header .container .header_part_two {
+  width: 300px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .container .header_part_two .shop_link {
+  font-size: 15px;
+}
+
+header .container .header_part_two .contact_link {
+  font-size: 15px;
 }
 
 nav {
