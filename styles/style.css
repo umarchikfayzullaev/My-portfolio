@@ -18,12 +18,15 @@ img {
   width: 100%;
 }
 
+body {
+  font-family: 'Sigmar One', cursive;
+}
+
 header .container {
   width: 1140px;
   margin: 0 auto;
   border: 1px solid black;
   height: 100px;
-  font-family: 'Sigmar One', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,26 +82,27 @@ nav {
   margin: 0 auto;
   border: 1px solid black;
   height: 50px;
+  display: none;
 }
 
 main {
   width: 1140px;
   margin: 0 auto;
   border: 1px solid black;
-  height: 200px;
+  height: 400px;
 }
 
 section {
   width: 1140px;
   margin: 0 auto;
   border: 1px solid black;
-  height: 500px;
+  height: 800px;
 }
 
 footer {
   width: 1140px;
   margin: 0 auto;
   border: 1px solid black;
-  height: 50px;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
