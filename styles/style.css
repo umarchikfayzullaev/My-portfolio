@@ -71,16 +71,14 @@ header .container .header_con .header_list .header_item .header_link {
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 500;
-  border-radius: 5px;
-  padding: 3px 5px;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
 header .container .header_con .header_list .header_item .header_link:hover {
-  margin-bottom: 4px;
-  -webkit-box-shadow: 0px 3px 5px 1px rgba(128, 128, 128, 0.733);
-          box-shadow: 0px 3px 5px 1px rgba(128, 128, 128, 0.733);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  border-bottom: 1px solid black;
 }
 
 header .container .header_con .header_side {
@@ -99,8 +97,6 @@ header .container .header_con .header_side {
 header .container .header_con .header_side .header_search {
   font-size: 23px;
   color: black;
-  border-radius: 5px;
-  padding: 5px 7px;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -108,16 +104,14 @@ header .container .header_con .header_side .header_search {
 header .container .header_con .header_side .header_shop {
   font-size: 23px;
   color: black;
-  border-radius: 5px;
-  padding: 5px 7px;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
 header .container .header_con .header_side .header_search:hover, header .container .header_con .header_side .header_shop:hover {
-  margin-bottom: 4px;
-  -webkit-box-shadow: 0px 3px 5px 1px rgba(128, 128, 128, 0.733);
-          box-shadow: 0px 3px 5px 1px rgba(128, 128, 128, 0.733);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  border-bottom: 1px solid black;
 }
 
 main .container {
@@ -143,6 +137,8 @@ main .container .main_con {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 main .container .main_con .main_part_one {
@@ -171,19 +167,30 @@ main .container .main_con .main_part_one .main_link {
   padding: 10px 40px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 main .container .main_con .main_part_one .main_link:hover {
-  margin-bottom: 4px;
-  -webkit-box-shadow: 0px 3px 5px 2px rgba(128, 128, 128, 0.733);
-          box-shadow: 0px 3px 5px 2px rgba(128, 128, 128, 0.733);
+  background-color: black;
+  color: white;
 }
 
 main .container .main_con .main_part_two {
   width: 50%;
   height: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+main .container .main_con:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .container .main_con:hover .main_part_two {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 section .container {
@@ -433,6 +440,10 @@ section .container .section_con2 .section_list .section_item {
   height: 420px;
   width: 20%;
   text-align: start;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 section .container .section_con2 .section_list .section_item .item_text {
@@ -452,6 +463,13 @@ section .container .section_con2 .section_list .section_item .item_price {
   font-size: 19px;
   margin-top: 20px;
   font-weight: 500;
+}
+
+section .container .section_con2 .section_list .section_item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 1px 20px 5px rgba(128, 128, 128, 0.5);
+          box-shadow: 0px 1px 20px 5px rgba(128, 128, 128, 0.5);
 }
 
 section .container {
@@ -499,6 +517,8 @@ section .container .section_con3 .section_list .section_item {
   background: #F8F9FA;
   padding: 20px;
   text-align: center;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 section .container .section_con3 .section_list .section_item .item_text {
@@ -522,12 +542,26 @@ section .container .section_con3 .section_list .section_item .item_link {
   border-radius: 30px;
   color: black;
   font-weight: 500;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section .container .section_con3 .section_list .section_item .item_link:hover {
+  background-color: black;
+  color: white;
 }
 
 section .container .section_con3 .section_list .section_item .item_img {
   margin-top: 30px;
   width: 80%;
   height: 220px;
+}
+
+section .container .section_con3 .section_list .section_item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 1px 20px 5px rgba(128, 128, 128, 0.5);
+          box-shadow: 0px 1px 20px 5px rgba(128, 128, 128, 0.5);
 }
 
 section .container {
@@ -550,7 +584,7 @@ section .container .section_con4 .section_text {
 }
 
 section .container .section_con4 .section_subtext {
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Readex Pro', sans-serif;
   font-weight: 500;
 }
@@ -596,6 +630,13 @@ section .container .section_con4 .section_link {
   color: black;
   font-size: 25px;
   font-weight: 400;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  padding: 5px 5px;
+}
+
+section .container .section_con4 .section_link:hover {
+  border-bottom: 1px solid black;
 }
 
 section .container {
@@ -660,6 +701,8 @@ section .container .section_con5 .searches .section_link:hover {
   border: 1px solid black;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  background-color: black;
+  color: white;
 }
 
 section .container .section_con5 .rectangle {
@@ -713,11 +756,13 @@ section .container .section_con5 .rectangle label .rectangle_inp {
   height: 80px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
   padding: 0px 30px;
   text-transform: capitalize;
   font-weight: 500;
   border: 3px solid #323232;
+  background-color: #4b4b4b00;
 }
 
 section .container .section_con5 .rectangle label .rectangle_link {
@@ -766,7 +811,8 @@ footer .container .footer_con {
 
 footer .container .footer_con .left_side {
   width: 330px;
-  height: 300px;
+  height: 280px;
+  border-bottom: 1px solid #DCE5E2;
 }
 
 footer .container .footer_con .left_side .left_img {
@@ -783,7 +829,7 @@ footer .container .footer_con .left_side .text_left_side {
 
 footer .container .footer_con .right_side {
   width: 1000px;
-  height: 300px;
+  height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,6 +840,7 @@ footer .container .footer_con .right_side {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 50px;
+  border-bottom: 1px solid #DCE5E2;
 }
 
 footer .container .footer_con .right_side .sides {
