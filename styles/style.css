@@ -25,7 +25,6 @@ body {
 header .container {
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 header .container .header_con {
@@ -117,7 +116,6 @@ header .container .header_con .header_side .header_search:hover, header .contain
 main .container {
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 main .container .main_con {
@@ -196,7 +194,6 @@ main .container .main_con:hover .main_part_two {
 section .container {
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 section .container .section_con {
@@ -786,10 +783,13 @@ section .container .section_con5 .rectangle label .rectangle_link {
   font-family: 'Readex Pro', sans-serif;
 }
 
+footer {
+  background-color: #F8F9FA;
+}
+
 footer .container {
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid black;
   background-color: #F8F9FA;
 }
 
@@ -811,7 +811,7 @@ footer .container .footer_con {
 
 footer .container .footer_con .left_side {
   width: 330px;
-  height: 280px;
+  height: 220px;
   border-bottom: 1px solid #DCE5E2;
 }
 
@@ -829,7 +829,7 @@ footer .container .footer_con .left_side .text_left_side {
 
 footer .container .footer_con .right_side {
   width: 1000px;
-  height: 280px;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,12 +849,24 @@ footer .container .footer_con .right_side .sides {
 }
 
 footer .container .footer_con .right_side .sides .right_text {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 600;
 }
 
 footer .container .footer_con .right_side .sides .right_subtext {
+  width: 160px;
+  display: block;
   margin-top: 15px;
   font-size: larger;
+  font-weight: 500;
+  color: black;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+footer .container .footer_con .right_side .sides .right_subtext:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-bottom: 2px solid black;
 }
 /*# sourceMappingURL=style.css.map */
